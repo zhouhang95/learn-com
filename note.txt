@@ -1,0 +1,9 @@
+cl /LD Library.cpp Library.def
+cl Application.cpp /link Library.lib
+
+csc /platform:x86 manage.cs
+
+uuidgen | clip
+
+del *.expe *.lib *.dll *.exe *.obj *.exp
+
